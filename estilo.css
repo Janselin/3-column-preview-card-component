@@ -125,10 +125,24 @@ footer .attribution a {
 }
 
 
-/* @media (min-width: 375px)  {
+
+ @media (max-width: 374px)  {
 .container {flex-direction: column; width: 100%;     
     margin: 10px 10px;     
     align-content: center;}
-.yellow,.green {border-radius: 0px;}
-.attribution {text-align: left;}
-}  */
+    .yellow,.green {border-radius: 0px;}
+    .attribution {text-align: left;} 
+
+ }
+
+
+
+ @media (max-width: 550px)  {
+    .container {flex-direction: column; width: 100%;     
+        margin: 10px 10px;     
+        align-content: center;}
+        .yellow,.green {border-radius: 0px;}
+        .attribution {text-align: left;} 
+    
+     }
+
