@@ -125,10 +125,10 @@ footer .attribution a {
 }
 
 
-@media (min-width: 375px)  {
+/* @media (min-width: 375px)  {
 .container {flex-direction: column; width: 100%;     
     margin: 10px 10px;     
     align-content: center;}
 .yellow,.green {border-radius: 0px;}
 .attribution {text-align: left;}
-} 
+}  */
