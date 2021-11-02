@@ -8,12 +8,16 @@
 
 body { 
     background-color: hsl(0, 0%, 95%); 
-    font-size: 15px;}
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;}
 
 
 .container {    
   
-      margin: 127px 200px;    
+      margin: 3em;
       display: flex;    
       align-items: center;    
       justify-content: center;
@@ -32,10 +36,10 @@ div {
     border-bottom-left-radius: 7px;
 }
     
-.yellow button {
+.yellow a {
     color:hsl(31, 77%, 52%) ;
 }
-.yellow  button:hover {
+.yellow  a:hover {
     border: 2px solid hsl(0, 0%, 95%);
     background-color:hsl(31, 77%, 52%) ;
     color: hsl(0, 0%, 95%);;
@@ -44,10 +48,10 @@ div {
      background-color: hsl(184, 100%, 22%);
      padding: 20px;
     }
-.blue button { 
+.blue a { 
   color: hsl(184, 100%, 22%);
 } 
-.blue button:hover {
+.blue a:hover {
     border: 2px solid hsl(0, 0%, 95%);
     background-color:hsl(184, 100%, 22%) ;
     color: hsl(0, 0%, 95%);;
@@ -61,10 +65,10 @@ div {
     border-bottom-right-radius: 7px;
 }
     
-.green button {
+.green a {
     color:hsl(179, 100%, 13%) ;
 }
-.green  button:hover {
+.green  a:hover {
     border: 2px solid hsl(0, 0%, 95%);
     background-color:hsl(179, 100%, 13%) ;
     color: hsl(0, 0%, 95%);;
@@ -96,42 +100,44 @@ div img {
     
     }
     
-button {    
-       width: 148px;    
-       height: 46px;    
-       border-radius: 26px;    
+main a {
+       display: inline-block;
+       width: 148px;
+       height: 46px;
+       border-radius: 26px;
        border: none;
-       text-align: center;    
+       text-align: center;
        margin: 68px 20px;
+       line-height: 46px ;
        color: hsl(0, 0%, 95%);
        font-family: 'Lexend Deca', sans-serif;
-       cursor: pointer;
-       background-color: white;
+      background-color: white;
+       text-decoration: none;
 }
 
 
 
 
-footer .attribution {
+footer  {
     font-size: 13px; 
     text-align:center; 
-    width: 100%; 
-    height: 30px;
+    width: 100%;    
     font-family: 'Big Shoulders Display', cursive;
 }
 
-footer .attribution a { 
+footer a { 
     color: hsl(228, 45%, 44%); 
 }
 
 
 
  @media (max-width: 374px)  {
-.container {flex-direction: column; width: 100%;     
+.container {
+    flex-direction: column; width: 100%;     
     margin: 10px 10px;     
     align-content: center;}
     .yellow,.green {border-radius: 0px;}
-    .attribution {text-align: left;} 
+    footer{text-align: center;} 
 
  }
 
@@ -142,7 +148,7 @@ footer .attribution a {
         margin: 10px 10px;     
         align-content: center;}
         .yellow,.green {border-radius: 0px;}
-        .attribution {text-align: left;} 
+        footer {text-align: center;} 
     
      }
 
